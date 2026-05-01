@@ -89,13 +89,8 @@ nav {
 
 /* ── GALLERY ── */
 #gallery {
-  border-top: 3px solid transparent;
-  border-bottom: 3px solid transparent;
   padding: 120px 56px;
-  background-image: linear-gradient(var(--cream), var(--cream)), url('images/08.jpeg');
-  background-size: 100% 100%, 100% 80px;
-  background-position: center, top;
-  background-repeat: no-repeat, no-repeat;
+  background: var(--cream);
 }
 
 .section-heading {
@@ -104,15 +99,13 @@ nav {
   margin-bottom: 48px;
   color: var(--ink);
   font-family: 'Times New Roman', Times, serif;
-  text-align: center;
+  text-align: left;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .gallery-item {
@@ -240,14 +233,7 @@ nav {
   font-family: 'Times New Roman', Times, serif;
 }
 
-.lightbox-zoom-hint {
-  margin-top: 8px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  font-family: 'Times New Roman', Times, serif;
-}
+.lightbox-zoom-hint { display: none; }
 
 .lightbox-close {
   position: absolute;
@@ -351,14 +337,9 @@ nav {
 
 /* ── CONTACT ── */
 #contact {
-  border-top: 3px solid transparent;
-  border-bottom: 3px solid transparent;
   padding: 120px 56px;
   max-width: 600px;
-  background-image: linear-gradient(var(--cream), var(--cream)), url('images/08.jpeg');
-  background-size: 100% 100%, 100% 80px;
-  background-position: center, bottom;
-  background-repeat: no-repeat, no-repeat;
+  background: var(--cream);
 }
 
 .contact-title {
