@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
+
   <!-- NAV -->
   <nav>
     <a href="#home" class="nav-logo">Lydia Chesley</a>
@@ -17,7 +17,7 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
- 
+
   <!-- HERO -->
   <section id="home">
     <div class="hero-inner">
@@ -25,21 +25,21 @@
       <p class="hero-sub fade-up">original oil paintings on wooden board</p>
     </div>
   </section>
- 
+
   <!-- GALLERY -->
   <section id="gallery">
     <h2 class="section-heading fade-up">Selected Works</h2>
     <div class="gallery-grid">
- 
+
       <!--
         HOW TO ADD YOUR PAINTINGS:
         Replace the inner <div class="slot-inner">...</div> of each slot with:
         <img src="images/your-file.jpg" alt="Painting Title">
- 
+
         Then update the paintings[] array in script.js with the matching
         src, title, year, and medium for each slot (same order, 1–12).
       -->
- 
+
       <div class="gallery-item fade-up" onclick="openLightbox(0)">
         <div class="slot-inner"><div class="slot-icon">+</div><span class="slot-num">01</span></div>
       </div>
@@ -76,10 +76,10 @@
       <div class="gallery-item fade-up" onclick="openLightbox(11)">
         <div class="slot-inner"><div class="slot-icon">+</div><span class="slot-num">12</span></div>
       </div>
- 
+
     </div>
   </section>
- 
+
   <!-- LIGHTBOX -->
   <div class="lightbox-overlay" id="lightbox" onclick="closeLightboxOutside(event)">
     <div class="lightbox-inner">
@@ -92,7 +92,7 @@
       </div>
     </div>
   </div>
- 
+
   <!-- ABOUT -->
   <section id="about">
     <div class="about-image-wrap fade-up">
@@ -116,7 +116,7 @@
       </p>
     </div>
   </section>
- 
+
   <!-- CONTACT -->
   <section id="contact">
     <h2 class="contact-title fade-up">Get in touch</h2>
@@ -136,14 +136,14 @@
       </li>
     </ul>
   </section>
- 
+
   <!-- FOOTER -->
   <footer>
     <span class="footer-logo">Lydia Chesley</span>
     <span class="footer-copy">&copy; 2026</span>
   </footer>
- 
+
   <script src="script.js"></script>
- 
+
 </body>
 </html>
