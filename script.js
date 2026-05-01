@@ -55,14 +55,27 @@ function renderLightbox() {
   const p = paintings[currentIndex];
   const content = document.getElementById('lightbox-content');
   const caption = document.getElementById('lightbox-caption');
- 
+  
   if (p.src) {
-    content.innerHTML = `<img src="${p.src}" alt="${p.title}">`;
+    content.innerHTML = `<img src="${p.src}" alt="${p.title}" class="lightbox-img" onclick="toggleZoom()">`;
   } else {
     content.innerHTML = `<div class="lightbox-placeholder"><span style="color:rgba(247,249,250,0.3);font-style:italic;font-size:14px;">Slot ${currentIndex + 1} — no image yet</span></div>`;
   }
- 
+  
   caption.textContent = `${p.title} \u00b7 ${p.medium}, ${p.year}`;
+}
+
+let isZoomed = false;
+
+function toggleZoom() {
+  const img = document.querySelector('.lightbox-img');
+  isZoomed = !isZoomed;
+  
+  if (isZoomed) {
+    img.classList.add('zoomed');
+  } else {
+    img.classList.remove('zoomed');
+  }
 }
  
 // Keyboard navigation

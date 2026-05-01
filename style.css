@@ -108,7 +108,7 @@ nav {
   overflow: hidden;
   position: relative;
   background: var(--border);
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
 }
 
 .gallery-item img {
@@ -183,6 +183,13 @@ nav {
   max-height: 76vh;
   object-fit: contain;
   display: block;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.lightbox-img.zoomed {
+  transform: scale(2);
+  cursor: zoom-out !important;
 }
 
 .lightbox-placeholder {
@@ -202,6 +209,14 @@ nav {
   font-style: italic;
   font-size: 15px;
   letter-spacing: 0.02em;
+}
+
+.lightbox-zoom-hint {
+  margin-top: 8px;
+  text-align: center;
+  color: rgba(247, 249, 250, 0.35);
+  font-size: 12px;
+  letter-spacing: 0.04em;
 }
 
 .lightbox-close {
