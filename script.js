@@ -12,11 +12,11 @@ const paintings = [
   { src: 'images/01.jpeg', title: 'Untitled No. 1',       year: '2026', medium: 'Oil on board ' },
   { src: 'images/02.jpeg', title: 'Trumpet Flower',        year: '2026', medium: 'Oil on board' },
   { src: 'images/03.jpeg', title: 'Pareidolia',            year: '2026', medium: 'Oil on board' },
-  { src: 'images/04.jpeg', title: 'Headboard',             year: '2026', medium: 'Oil on board <i> sold </i> ' },
-  { src: 'images/05.jpeg', title: 'Untitled No. 2',        year: '2026', medium: 'Oil on board' },
+  { src: 'images/04.jpeg', title: 'Headboard',             year: '2026', medium: 'Oil on board — <em>Sold</em>' },
+  { src: 'images/05.jpeg', title: 'Untitled No. 2',        year: '2026', medium: 'Oil on board — <em>Sold</em>' },
   { src: 'images/06.jpeg', title: 'Come a little closer',  year: '2026', medium: 'Oil on board' },
-  { src: 'images/07.jpeg', title: 'Untitled No. 3',        year: '2026', medium: 'Oil on board <i> sold </i> ' },
-  { src: 'images/08.jpeg', title: 'Phone No. 1',           year: '2026', medium: 'Oil on board <i> sold </i> ' },
+  { src: 'images/07.jpeg', title: 'Untitled No. 3',        year: '2026', medium: 'Oil on board — <em>Sold</em>' },
+  { src: 'images/08.jpeg', title: 'Phone No. 1',           year: '2026', medium: 'Oil on board — <em>Sold</em>' },
   { src: 'images/09.jpeg', title: 'Phone No. 2',           year: '2026', medium: 'Mixed media' },
   { src: 'images/10.jpeg', title: 'Phone No. 3',           year: '2026', medium: 'Mixed media' },
   { src: 'images/11.jpeg', title: 'Phone No. 4',           year: '2026', medium: 'Oil on board' },
@@ -98,5 +98,3 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
  
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
- 
- 
